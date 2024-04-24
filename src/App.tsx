@@ -1,21 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
+import './App.css';
 import NavBar from './components/navBar/NavBar';
 import Footer from './components/footer/Footer';
-import Home from './components/home/Home';
-import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div>
       <NavBar />
-      <main className="flex-1">
-        <Home />
-      </main>
+      <div className="content">
+        <h1 className='titulo'>Farmacia GLR </h1>
+        <h2 className='titulo'>Melhor Farmacia do Brasil.</h2>
+      </div>
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

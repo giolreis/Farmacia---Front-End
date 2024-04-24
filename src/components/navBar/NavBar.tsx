@@ -1,16 +1,15 @@
 import React from 'react';
+import logo from '../img/logo.png'; // Importe seu logo aqui
 
 const NavBar: React.FC = () => {
   return (
-    <nav className="bg-gray-800 p-4">
-      <div className="container mx-auto">
-        <div className="flex justify-between items-center">
-          <span className="text-white text-xl font-bold">Farmácia</span>
-          <div>
-            <span className="text-white mr-4">Categorias</span>
-            <span className="text-white">Produtos</span>
-          </div>
-        </div>
+    <nav className="navbar">
+      <div className="container">
+        <img src={logo} alt="Farmácia Logo" className="logo" />
+      </div>
+      <div className="navbar-right">
+        <span>Categorias</span>
+        <span>Produtos</span>
       </div>
     </nav>
   );

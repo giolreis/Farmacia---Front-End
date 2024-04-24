@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { createCategoria, updateCategoria } from '../services/CategoriaService';
 
 interface CategoriaFormProps {
-  categoria?: any;
+  categoria: any;
 }
 
 const CategoriaForm: React.FC<CategoriaFormProps> = ({ categoria }) => {
